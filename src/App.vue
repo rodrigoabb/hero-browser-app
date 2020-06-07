@@ -48,6 +48,34 @@ body {
   box-sizing: border-box;
 }
 
+h1, p, figure {
+  margin: 0;
+  font-weight: normal;
+}
+
+a,
+a:hover,
+a:visited{
+  text-decoration: none;
+  color: #444A59;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+button {
+  appearance: none;
+  border: 0;
+}
+
+.button:focus {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
 header,
 footer {
   height: 60px;
@@ -55,6 +83,5 @@ footer {
   flex-direction: row;
   align-items: center;
 }
-
 
 </style>

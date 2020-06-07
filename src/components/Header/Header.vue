@@ -1,13 +1,22 @@
 <template>
     <div class="header-container">
     <header class="header">
+      <Logo />
+      <div class="slogan">
+        Get to know the town!
+      </div>
     </header>
   </div>
 </template>
 
 <script>
+import Logo from '@/components/Utils/Logo.vue';
+
 export default {
   name: 'Header',
+  components: {
+    Logo,
+  },
 };
 </script>
 
@@ -38,6 +47,16 @@ export default {
   padding-left: 5px;
   // max-width: 1240px;
   margin: auto;
+}
+
+.slogan {
+  font-family: sans-serif;
+  font-weight: bold;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
 
 </style>

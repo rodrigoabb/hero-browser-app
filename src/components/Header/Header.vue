@@ -22,6 +22,8 @@ export default {
 
 <style lang="scss" scoped>
 
+@import "@/utilities/variables";
+
 /* ==========================================================================
    Header
    ========================================================================== */
@@ -57,6 +59,37 @@ export default {
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media (max-width: $phone-upper-boundary - 1) {
+
+  .header {
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+
+}
+
+@media (min-width: $phone-upper-boundary) {
+
+  .header {
+    padding-right: 5.5em;
+    padding-left: 2.5em;
+  }
+
+}
+
+@media (min-width: $tablet-landscape-upper-boundary) {
+
+  .header {
+    padding-right: 4.5em;
+    padding-left: 2.5em;
+  }
 }
 
 </style>

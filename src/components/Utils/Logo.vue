@@ -40,4 +40,12 @@ export default {
   height: 50px;
 }
 
+@media (min-width: $phone-upper-boundary) {
+  .small-logo {
+    display: none;
+  }
+  .big-logo {
+    display: inline;
+  }
+}
 </style>

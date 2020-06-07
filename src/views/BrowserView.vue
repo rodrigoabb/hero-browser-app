@@ -1,6 +1,8 @@
 <template>
   <div>
-    View
+    <main class="browser-view">
+      View
+    </main>
   </div>
 </template>
 
@@ -10,6 +12,11 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
+
+.browser-view {
+  margin-top: 70px;
+  margin-left: 10px;
+}
 
 </style>

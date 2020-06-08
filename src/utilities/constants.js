@@ -1,8 +1,80 @@
-
 /**
  * @module utilities/constants
  *
  */
+
+/**
+  * Defines API address to make requests: Base url, branch
+*/
+export const API = {
+  baseUrl: 'https://',
+  branch: 'master',
+};
+
+/**
+  * Hardcoded array of bjects for towns
+*/
+export const TOWNS_ARRAY = [
+  {
+    id: 'brastlewark',
+    name: 'Brastlewark',
+  },
+  // // Uncomment below to add another town (or add more if you want...)
+  // {
+  //   id: 'new-town',
+  //   name: 'New Town',
+  // },
+];
+
+/**
+  * Hardcoded array of strings for professions
+*/
+export const PROFESSIONS_ARRAY = [
+  'Metalworker',
+  'Brewer',
+  'Cook',
+  'Carpenter',
+  'Smelter',
+  'Mason',
+  'Baker',
+  'Butcher',
+  ' Tinker',
+  'Tax inspector',
+  'Blacksmith',
+  'Stonecarver',
+  'Prospector',
+  'Farmer',
+  'Potter',
+  'Tailor',
+  'Sculptor',
+  'Miner',
+  'Medic',
+  'Gemcutter',
+  'Woodcarver',
+  'Mechanic',
+  'Leatherworker',
+  'Marble Carver',
+];
+
+/**
+  * Hardcoded array of strings for genders
+*/
+export const GENDER_OPTIONS = [
+  'Androginous',
+  'Agender',
+  'Bigender',
+  'Female',
+  'Male',
+  'Female To Male',
+  'Genderqueer',
+  'Male to Female',
+  'Other',
+  'Pangender',
+  'Third Gender',
+  'Transgender',
+  'Transsexual',
+  'Two-Spirit',
+];
 
 /**
   * Hardcoded array for age range
@@ -28,21 +100,6 @@ export const WEIGHT_UNIT = 'kg';
 export const HEIGHT_UNIT = 'cm';
 
 /**
-  * Hardcoded array of strings for genders
+  * Defines fake wait time for spinner
 */
-export const GENDER_OPTIONS = [
-  'Androginous',
-  'Agender',
-  'Bigender',
-  'Female',
-  'Male',
-  'Female To Male',
-  'Genderqueer',
-  'Male to Female',
-  'Other',
-  'Pangender',
-  'Third Gender',
-  'Transgender',
-  'Transsexual',
-  'Two-Spirit',
-];
+export const FAKE_WAIT_TIME_MS = 400;

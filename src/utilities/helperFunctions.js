@@ -5,6 +5,23 @@ import { GENDER_OPTIONS } from '@/utilities/constants';
 */
 
 /**
+  * Parses source array of population and retrieves all different professions
+  * @param {Array<Object>} sourceArray Array of objects for population
+*/
+export const getAllProfessionsAvailable = (sourceArray) => {
+  const professions = new Set();
+  if (sourceArray) {
+    for (let i = 0; i < sourceArray.length; i += 1) {
+      if (sourceArray[i].professions.length > 0) {
+        professions.add(...sourceArray[i].professions);
+      }
+    }
+  }
+  const professionsArray = [...professions];
+  return professionsArray;
+};
+
+/**
   * Parses source array of population and retrieves min and max ages
   * @param {Array<Object>} sourceArray Array of objects for population
 */

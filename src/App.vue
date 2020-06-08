@@ -20,6 +20,7 @@ export default {
 
 <style lang="scss">
 
+@import "@/utilities/variables";
 
 /* ==========================================================================
    Main Styles
@@ -83,5 +84,37 @@ footer {
   flex-direction: row;
   align-items: center;
 }
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex: 1 0 auto;
+  margin: 30px 0 20px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  // max-width: 1240px;
+  padding: 30px 40px;
+  margin: 0 auto;
+}
+
+.error {
+  color: red;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+  @media (max-width: $phone-upper-boundary - 1) {
+    .container {
+      padding: 30px 10px;
+    }
+  }
 
 </style>
